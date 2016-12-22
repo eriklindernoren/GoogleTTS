@@ -7,10 +7,10 @@ class GoogleTTS():
         self.lang = lang
         self.output_method = "2>/dev/null"
 
-    def setLanguage(language):
+    def set_language(language):
         self.lang = language
 
-    def speek(self, message):
+    def speak(self, message):
         cmd = "%s -l %s -m '%s' %s" % (self.script, self.lang, message, self.output_method)
         p = subprocess.Popen(cmd, stdout=subprocess.PIPE, stdin=subprocess.PIPE, shell=True, preexec_fn=os.setsid) 
         p.wait()

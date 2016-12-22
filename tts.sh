@@ -4,7 +4,6 @@ STRINGNUM=0
 
 while [[ $# -gt 1 ]] 
 do
-
 key="$1"
 case $key in
     -l|--lang)
@@ -17,7 +16,6 @@ case $key in
     ;;
     *)
     ;;
-
 esac
 shift
 done
