@@ -2,7 +2,7 @@
 import subprocess, os, signal, sys
 
 class GoogleTTS():
-    def __init__ (self, lang="sv"):
+    def __init__ (self, lang="en-us"):
         self.script = "./tts.sh"
         self.lang = lang
         self.output_method = "2>/dev/null"

@@ -4,7 +4,7 @@ from google_tts import GoogleTTS
 
 voice = GoogleTTS()
 if len(sys.argv) == 1:
-    voice.speak("Vad vill du att jag ska säga?")
+    voice.speak("What would you like me to say?")
     text = raw_input("Enter text: ")
 else:
     text = sys.argv[1]
